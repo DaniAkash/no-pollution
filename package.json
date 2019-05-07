@@ -1,6 +1,6 @@
 {
   "name": "no-pollution",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prevent prototype pollution by sanitizing all string inputs to the JSON parser",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,6 @@
     "no-pollution"
   ],
   "author": "DaniAkash <s.daniakash@gmail.com> (https://github.com/DaniAkash)",
+  "repository": "DaniAkash/no-pollution",
   "license": "MIT"
 }
