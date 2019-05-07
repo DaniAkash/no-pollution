@@ -1,7 +1,5 @@
-var noPollutionJsonParser = JSON.parser;
+var noPollutionDefaultJsonParser = JSON.parse;
 var safeParser = function(jsonString, reviver) {
-  jsonString = jsonString.replace(/"__proto__"/g, '"__________"');
-  if(reviver) return noPollutionJsonParser(jsonString, reviver);
-  else return noPollutionJsonParser(jsonString);
+  return noPollutionDefaultJsonParser(jsonString? jsonString.replace(/"__proto__"/g, '"__pollutants__"'): jsonString, reviver);
 };
 JSON.parse = safeParser;
