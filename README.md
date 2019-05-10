@@ -40,6 +40,9 @@ Currently there is no CDN available yet. But you can directly load the javascrip
 <script src="./path-to-your-js-folder/no-pollution/index.js"></script>
 ```
 
+# Important
+While no-pollution works with most of the known vulnerabilities, it will not work against vulnerabilities introduced by path-value assignment operations since the operation doesn't use a JSON parser. One such vulnerability is found in [mpath](https://snyk.io/vuln/SNYK-JS-MPATH-72672) (luckily it has been patched already). Do check what kind of vulnerability you are affected by using [npm-audit](https://docs.npmjs.com/cli/audit) before using no-pollution.
+
 ### TODO
 - [ ] Detailed documentation.
 - [ ] CDN for the js file
