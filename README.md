@@ -35,9 +35,9 @@ console.log(someObject.__pollutants__); // will print { polluted: true }
 ```
 
 ### Usage with the browser
-Currently there is no CDN available yet. But you can directly load the javascript file in your browser before you load other js files
+Via CDN
 ```html
-<script src="./path-to-your-js-folder/no-pollution/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/no-pollution/index.js"></script>
 ```
 
 # Important
@@ -45,4 +45,4 @@ While no-pollution works with most of the known vulnerabilities, it will not wor
 
 ### TODO
 - [ ] Detailed documentation.
-- [ ] CDN for the js file
+- [x] CDN for the js file
